@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR Code Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <label for="theme" class="theme">
+        <span class="theme__toggle-wrap">
+            <input id="theme" class="theme__toggle" type="checkbox" role="switch" name="theme" value="dark">
+            <span class="theme__fill"></span>
+            <span class="theme__icon">☀️</span>
+        </span>
+    </label>
+    <div class="container">
+        <h1>QR Code Generator</h1>
+        <div class="input-group">
+            <input type="text" id="inputText" placeholder="Enter text or URL" />
+            <button id="generateButton">Generate</button>
+        </div>
+        <div id="qrcode" class="qr-container"></div>
+        <div id="toast" class="toast">QR Code Generated!</div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
